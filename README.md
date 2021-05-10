@@ -9,3 +9,9 @@
 ```
 sh run.sh input.html output.tex
 ```
+
+* To delete all the files created during the execution run(except .tex file)
+
+```
+rm lex.yy.c next.output next.tab.* a.out
+```
