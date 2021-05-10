@@ -17,3 +17,25 @@ sh run.sh input.html output.tex
 ```
 rm lex.yy.c next.output next.tab.* a.out
 ```
+
+* HTML Tags that this application work with:
+..* head
+..* body
+..* title
+..* a, href
+..* font: size
+..* center
+..* br
+..* p
+..* h1, h2, h3, h4
+..* ul, li, ol, ul, dl, dt, dd
+..* div
+..* u, b, i, em, tt, strong, small,
+..* sub, sup
+..* img: src, width, height, figure, figcaption
+..* table, caption, th, tr, td
+
+* Can also work with Greek words
+
+* bugs:
+..* img src do not parse the path correctly
