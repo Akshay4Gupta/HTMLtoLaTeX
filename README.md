@@ -20,7 +20,7 @@ rm lex.yy.c next.output next.tab.* a.out
 
 * HTML Tags that this application work with:
 
-  - [x] head
+  - :whitecheckmark: head
   - [x] body
   - [x] title
   - [x] a
@@ -45,5 +45,5 @@ rm lex.yy.c next.output next.tab.* a.out
 
 * Can also work with Greek words
 
-* bugs:
+* bugs :broken_heart:
   * img src do not parse the path correctly
