@@ -19,23 +19,31 @@ rm lex.yy.c next.output next.tab.* a.out
 ```
 
 * HTML Tags that this application work with:
-..* head
-..* body
-..* title
-..* a, href
-..* font: size
-..* center
-..* br
-..* p
-..* h1, h2, h3, h4
-..* ul, li, ol, ul, dl, dt, dd
-..* div
-..* u, b, i, em, tt, strong, small,
-..* sub, sup
-..* img: src, width, height, figure, figcaption
-..* table, caption, th, tr, td
+
+  - [x] head
+  - [x] body
+  - [x] title
+  - [x] a
+      - [x] href
+  - [x] font
+      - [x] size
+  - [x] center
+  - [x] br
+  - [x] p
+  - [x] h1, h2, h3, h4
+  - [x] ul, li, ol, ul, dl, dt, dd
+  - [x] div
+  - [x] u, b, i, em, tt, strong, small,
+  - [x] sub, sup
+  - [x] img:
+      - [x] src
+      - [x] width
+      - [x] height
+      - [x] figure
+      - [x] figcaption
+  - [x] table, caption, th, tr, td
 
 * Can also work with Greek words
 
 * bugs:
-..* img src do not parse the path correctly
+  * img src do not parse the path correctly
