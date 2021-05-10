@@ -20,7 +20,7 @@ rm lex.yy.c next.output next.tab.* a.out
 
 * HTML Tags that this application work with:
 
-  - :whitecheckmark: head
+  - [x] head
   - [x] body
   - [x] title
   - [x] a
@@ -36,7 +36,7 @@ rm lex.yy.c next.output next.tab.* a.out
   - [x] u, b, i, em, tt, strong, small,
   - [x] sub, sup
   - [x] img:
-      - [x] src
+      - [ ] src
       - [x] width
       - [x] height
       - [x] figure
