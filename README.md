@@ -1,8 +1,8 @@
 # HTMLtoLaTeX
 * Using this code you will be able to convert the html file into latex file.
 
-
-| --------------- | ----------------------------- |
+| Function | Requirement |
+|:--------------- |:-----------------------------:|
 | Compatible with | Linux                         |
 | Prerequisites   | flex, bison, gcc version 9.3.0|
 
