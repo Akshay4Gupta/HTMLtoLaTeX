@@ -1,7 +1,7 @@
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
 #include "next.h"
 
-using namespace std;
+// using namespace std;
 map<nodetype, string> startNodes{
   {eDATA,""},
   {eHTML,"\\documentclass{article}\n\\usepackage{hyperref}\n\\usepackage{comment}\n\\usepackage[utf8]{inputenc}\n\\usepackage[T1]{fontenc}\n\\usepackage{enumitem}\n\\usepackage{graphicx} "},
@@ -98,7 +98,7 @@ map<nodetype, string> endNodes{
   {eTRp," \\\\\n"},
   {eTHp,""},
   {eTDp,""},
-  {eTABLE,"\n\\end{table} "},
+  {eTABLE,"\n\\end{table}\\\\ "},
   {eTABLEBORDER,""},
   {eBREAK,""},
   {eLINK,"} "},
@@ -247,7 +247,7 @@ void seeTable(treeNode *node){
 	int tableborder = stoi((*it)->data);
 	it++;
 	makeDocument(*it);
-	latex<<"\n\\begin{tabular}";
+  latex<<"\n\\begin{tabular}";
 	it++;
 	it++;
 	latex<<"{";
@@ -257,7 +257,6 @@ void seeTable(treeNode *node){
 		}
 		latex<<"|}\n";
 	}else{
-		tb = false;
 		for(int i = 0; i < stoi((*it)->data); i++){
 			latex<<" c";
 		}
@@ -265,8 +264,8 @@ void seeTable(treeNode *node){
 	}
 	it++;
 	makeDocument(*it);
-	if(tb)
-		latex<<"\n\\hline\n\\end{tabular}";
+  if(tableborder > 0) latex<<"\n\\hline";
+	latex<<"\n\\end{tabular}";
 	it++;
 	makeDocument(*it);
 	tb = true;

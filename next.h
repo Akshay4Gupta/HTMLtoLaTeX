@@ -33,4 +33,3 @@ extern void fontsizeprint(treeNode *node);
 extern void passchildrenSKIP1(treeNode *node);
 extern treeNode *leftchild(treeNode *node);
 extern void seeTable(treeNode *node);
-
